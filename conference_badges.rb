@@ -21,5 +21,5 @@ end
 end
 
 def printer
-  batch_badge_creator(names).attendees.each{ |name| puts "#{name}"}
+  batch_badge_creator.attendees.each{ |name| puts "#{name}"}
 end
