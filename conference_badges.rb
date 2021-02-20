@@ -19,3 +19,7 @@ def assign_rooms(names)
 end
   return rooms
 end
+
+def printer
+  batch_badge_creator(names).attendees.each{ |name| puts "#{name}"}
+end
