@@ -21,5 +21,5 @@ end
 end
 
 def printer
-  batch_badge_creator(names).collect |name|
+  
 end
