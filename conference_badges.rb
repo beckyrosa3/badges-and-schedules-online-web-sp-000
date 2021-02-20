@@ -13,13 +13,13 @@ end
 
 def assign_rooms(names)
   rooms = []
-  names.each_with_index do |name, index|
-  new_room = index+1
+  names.each.with_index(1) do |name, index|
+  
   rooms.push("Hello, #{name}! You'll be assigned to room #{new_room}!")
 end
   return rooms
 end
 
 def printer
-  batch_badge_creator.attendees.each{ |name| puts "#{name}"}
+  batch_badge_creator(names).collect |name|
 end
